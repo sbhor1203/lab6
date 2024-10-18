@@ -9,7 +9,9 @@ object Retrofitclass {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val apiService: PokeApiService = retrofit.create(PokeApiService::class.java)
+    val apiService: PokeApiService by lazy {
+        retrofit.create(PokeApiService::class.java)
+    }
 }
 
 
