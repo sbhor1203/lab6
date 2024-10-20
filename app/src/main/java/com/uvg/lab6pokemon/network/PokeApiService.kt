@@ -7,6 +7,8 @@ import retrofit2.http.Query
 interface PokeApiService {
     @GET("pokemon?limit=100&offset=0")
     suspend fun getPokemonList(@Query("limit") limit: Int): PokeResponse
+
+
 }
 
 
