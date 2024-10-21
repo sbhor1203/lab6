@@ -70,7 +70,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(kotlin("script-runtime"))
-    implementation(libs.coil.compose)
+    implementation(libs.coil3.coil.compose)
     implementation (libs.material3)
 
 }
